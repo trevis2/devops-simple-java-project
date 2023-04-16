@@ -1,0 +1,24 @@
+--test
+
+è essenziale, 
+
+migliora la velocità di sviluppo
+
+migliora la cooperazione del team
+
+aumenta la consistenza del software
+
+punti chiave
+
+frequenza release
+disponibilità strumenti
+maturità prodotto 
+ambienti di CI/CD e dati di test
+
+--release
+processo automatico e ripetibile 
+
+(il trigger ad esempio il tagging)
+
+--deploy
+automatico o scriptato 

@@ -1,0 +1,25 @@
+Operate
+
+X as code, ricreo infrastruttura piattaforma e configurazione come codice
+
+la piattaforma dovrebbe essere self service
+
+always-on services
+servizi sempre attivi e raggiungibili
+servizi di auto scaling
+
+Monitor
+ci permette di gestire il feedback loop
+visibilità cambiamenti
+collaborazione automatizzata
+sperimnetazione
+gestione cambiamento
+sistemi distribuiti
+
+monitoraggio definito fin dallo sviluppo
+(dovrebbero evidenziare le metriche più importanti)
+
+aggregatori per microservizi
+dashboard
+
+

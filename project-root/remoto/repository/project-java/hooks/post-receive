@@ -1,0 +1,47 @@
+#!/bin/bash
+
+GIT_REF=`git rev-parse HEAD`
+cd .. && git clone project-java checkout
+
+echo "Building.."
+tar --exclude='.git' -cvf ../artifacts/artifact-$(echo $GIT_REF).tar.gz checkout/compiled/*
+echo "Build complete!"
+
+echo "Running Test"
+cd checkout
+java -cp ./compiled Test 1 2 somma 3
+RES= echo $?
+cd ..
+
+rm -rf checkout
+echo "Delete temp directory!"
+if [[ $RES -eq 0 ]];
+then 
+    echo "test passed!"
+    echo "Releasing"
+    cd ..
+    cp artifacts/artifact-$(echo $GIT_REF).tar.gz releases/release-$(echo $GIT_REF).tar.gz
+    cd repository
+    echo "Done!"
+    
+    echo "Provisioning..."
+    mkdir -p ../deploy
+    cd ../deploy
+    echo "Done!"
+
+    echo "Checking System dependencies"
+    java -version || printf "è necessario inserire un comando per installare Java!"
+    echo "Done!"
+
+    echo "Deploying..."
+    latest=$(cd ../../remoto/releases; ls -t | head -n1)
+    cp ../../remoto/releases/$(echo $latest) release.tar.gz
+    tar -xvf ./release.tar.gz
+    echo "Done!"
+
+    exit 0
+else
+    echo "test Failed!"
+    echo "Skip Release" 
+    exit 1
+fi

@@ -1,0 +1,10 @@
+#!/bin/bash
+
+GIT_REF=`git rev-parse HEAD`
+
+printf "Building.."
+cd .. && git clone project-java checkout
+tar --exclude='.git' -cvf ../artifacts/artifact-$(echo $GIT_REF).tar.gz checkout
+printf "Build complete!"
+rm -rf checkout
+printf "Delete temp directory!"

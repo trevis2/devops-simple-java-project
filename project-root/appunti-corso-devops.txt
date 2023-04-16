@@ -1,0 +1,51 @@
+devops mette insieme i reparti
+
+sviluppo
+
+quality assurance
+
+operations
+
+
+problemi
+
+le varie operazioni
+
+interessi diversi e contrastanti tra i reporti che cozzano tra di loro
+
+
+le tre vie secondo cui un team di devops ha successo
+
+cioè passaggio veloce del software da dev a ops
+
+1 bisogna pensare al software già deployato
+2 feedback da produzione
+3 ciclo veloce di sviluppo e test e rilascio
+
+tramite l'automazione ridurre le operazioni ripetitive
+
+Culture
+Automation
+Lean
+Measurement
+Sharing
+
+si basa su
+
+sviluppo Agile
+versionamento e workflow 
+test automatici
+deploy automatico
+gestione incidenti
+feedback loop (misurazione, logging da ambiente di produzione)
+
+strumenti
+tutto per rendere consistente e ripetibile
+
+Compentenza:
+tools
+codice
+operations
+soft-skill
+
+

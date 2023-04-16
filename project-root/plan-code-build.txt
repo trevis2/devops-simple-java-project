@@ -1,0 +1,20 @@
+Plan
+
+pianificazione con agile 
+
+Code
+
+minimizzazione delle differenze tra i vari ambienti
+dichiarare tutte le dipendenze
+versionamento git
+
+workflow di lavoro nel versionamento
+gitflow oppure trunk-based-development
+
+build
+inclusione di tutte le dipendenze
+workflow automatizzato
+creazione artifact
+
+l'artifact deve essere completo delle dipendenze per eseguirlo e testarlo
+
